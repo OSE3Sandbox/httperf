@@ -7,8 +7,5 @@ RUN yum install -y httperf
 
 RUN mkdir -p /var/httperf
 
-WORKDIR /
-
-ENTRYPOINT tail -f /dev/null
-
+ENTRYPOINT ["tail", "-f", "/dev/null"]
 
