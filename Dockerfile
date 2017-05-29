@@ -9,3 +9,6 @@ RUN mkdir -p /var/httperf
 
 WORKDIR /
 
+ENTRYPOINT tail -f /dev/null
+
+
