@@ -3,7 +3,7 @@ MAINTAINER martinsauve@gmail.com
 RUN yum -y update && \
     yum -y install epel-release 
 
-RUN yum install -y httperf
+# RUN yum install -y httperf
 
 
 ADD launch.sh /httperf.sh
