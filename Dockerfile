@@ -9,5 +9,5 @@ RUN yum -y update && \
 ADD launch.sh /httperf.sh
 RUN chmod -v +x /httperf.sh
 
-ENTRYPOINT ['tail -f /dev/null']
+CMD tail -f /dev/null
 
