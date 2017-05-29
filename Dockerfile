@@ -7,9 +7,10 @@ RUN rpm -Uvh rpmforge-release-0.5.3-1.el7.rf.x86_64.rpm
 
 RUN yum -y install httperf
 RUN mkdir /var/httperf
+RUN chmod -v +x /var/httperf
 
-ADD launch.sh /var/httperf/httperf.sh
-RUN chmod -v +x /var/httperf/httperf.sh
+ADD launch.sh /httperf.sh
+RUN chmod -v +x /httperf.sh
 
 CMD tail -f /dev/null
 
