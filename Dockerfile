@@ -12,7 +12,7 @@ RUN yum install -y httperf
 
 ADD launch.sh /httperf.sh
 RUN chmod -v +x /httperf.sh
-CMD ["/httperf.sh "]
+CMD ["/httperf.sh"]
 
 EXPOSE 80
 
@@ -22,6 +22,3 @@ RUN chmod -v +x /run-httpd.sh
 
 CMD ["/run-httpd.sh"]
 
-
-
-CMD ['/var/httperf/run.sh']
