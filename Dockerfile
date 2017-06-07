@@ -10,7 +10,7 @@ RUN mkdir /var/httperf
 RUN chmod -v +x /var/httperf
 
 ADD launch.sh /httperf.sh
-RUN chmod -v +x /httperf.sh
+RUN chmod -v +wx /httperf.sh
 
 CMD tail -f /dev/null
 
